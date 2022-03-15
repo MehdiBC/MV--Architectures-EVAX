@@ -11,7 +11,7 @@
   <hr>
   <h2>vaccins:</h2>
   <ng-container *ngFor="let vaccin of user.vaccines; let i=index">
-    <p>Dose numéro {{i}}: {{vaccin.type}}</p>
+    <p>Dose numéro {{i + 1}}: {{vaccin.type}}</p>
     <p>Date: {{vaccin.date}}</p>
   </ng-container>
 </div>
