@@ -9,10 +9,15 @@ The user stories we worked on are:
 * Display user's vaccination pass
 
 <br />
+<br />
 
 ![alt text](https://github.com/MehdiBC/MV--Architectures-EVAX/blob/main/captures/centre_vacc_no_filter.png)
 
+<br />
+
 ![alt text](https://github.com/MehdiBC/MV--Architectures-EVAX/blob/main/captures/centre_vacc_gov.png)
+
+<br />
 
 ![alt text](https://github.com/MehdiBC/MV--Architectures-EVAX/blob/main/captures/user_page.png)
 
