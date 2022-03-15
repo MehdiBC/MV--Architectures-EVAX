@@ -7,7 +7,7 @@ export class CentreVaccinationDao{
     CentreVaccinationDao.centreVaccinations = [];
   }
 
-  static getByFilters(governorate?: string, name?: string){
+  static getByFilters(governorate?: string, name?: string): CentreVaccination[]{
     if(governorate && name){
       return CentreVaccinationDao.centreVaccinations.filter(
         (centreVaccination)=>

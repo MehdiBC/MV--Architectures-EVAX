@@ -12,10 +12,10 @@
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="">
-    <td>Mark</td>
-    <td>Otto</td>
-    <td>@mdo</td>
+  <tr *ngFor="let centreVaccination of centreVaccinations">
+    <td>{{centreVaccination.governorate}}</td>
+    <td>{{centreVaccination.name}}</td>
+    <td>{{centreVaccination.phone}}</td>
   </tr>
   </tbody>
 </table>
