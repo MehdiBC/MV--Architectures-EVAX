@@ -11,13 +11,16 @@ The user stories we worked on are:
 <br />
 <br />
 
+Display all centers (no filters)
 ![alt text](https://github.com/MehdiBC/MV--Architectures-EVAX/blob/main/captures/centre_vacc_no_filter.png)
 
 <br />
 
+Display all centers (Governorate filter)
 ![alt text](https://github.com/MehdiBC/MV--Architectures-EVAX/blob/main/captures/centre_vacc_gov.png)
 
 <br />
 
+Display user's vaccination pass
 ![alt text](https://github.com/MehdiBC/MV--Architectures-EVAX/blob/main/captures/user_page.png)
 
