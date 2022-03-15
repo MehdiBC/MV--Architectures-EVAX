@@ -8,6 +8,7 @@ The user stories we worked on are:
 * Search for vaccination center (searchbox)
 * Display user's vaccination pass
 
+<br />
 
 ![alt text](https://github.com/MehdiBC/MV--Architectures-EVAX/blob/main/captures/centre_vacc_no_filter.png)
 
