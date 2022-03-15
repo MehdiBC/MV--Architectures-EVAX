@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CentreVaccinationComponent } from './view-model/centre-vaccination/centre-vaccination.component';
+import { PassCovidComponent } from './view-model/pass-covid/pass-covid.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CentreVaccinationComponent,
+    PassCovidComponent
   ],
   imports: [
     BrowserModule,
