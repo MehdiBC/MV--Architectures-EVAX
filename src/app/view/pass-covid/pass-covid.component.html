@@ -1,1 +1,17 @@
-<p>pass-covid works!</p>
+<div class="input-group mb-3" style="margin: 50px; width: 400px">
+  <input [(ngModel)]="numInscription" id="num-inscri" type="text" class="form-control" placeholder="numéro d'inscription">
+  <button class="btn btn-outline-secondary" type="button" (click)="updateUser()"> > </button>
+</div>
+<div *ngIf="user" style="margin: 50px">
+  <h1 style="text-align: center">Attestation de vaccination</h1>
+  <p>numéro inscription: {{user.numInscription}}</p>
+  <p>nom et prénom: {{user.firstName | titlecase}} {{user.lastName | titlecase}}</p>
+  <p>carte d'identité nationale: {{user.cin}}</p>
+  <p>Date de naissance: {{user.birthdate}}</p>
+  <hr>
+  <h2>vaccins:</h2>
+  <ng-container *ngFor="let vaccin of user.vaccines; let i=index">
+    <p>Dose numéro {{i}}: {{vaccin.type}}</p>
+    <p>Date: {{vaccin.date}}</p>
+  </ng-container>
+</div>
