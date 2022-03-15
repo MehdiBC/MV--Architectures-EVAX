@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CentreVaccinationComponent } from './view-model/centre-vaccination/centre-vaccination.component';
 import { PassCovidComponent } from './view-model/pass-covid/pass-covid.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PassCovidComponent } from './view-model/pass-covid/pass-covid.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
