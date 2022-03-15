@@ -11,12 +11,12 @@ The user stories we worked on are:
 <br />
 <br />
 
-Display all centers (no filters)
+Display all vaccination centers (no filters)
 ![alt text](https://github.com/MehdiBC/MV--Architectures-EVAX/blob/main/captures/centre_vacc_no_filter.png)
 
 <br />
 
-Display all centers (Governorate filter)
+Display all vaccination centers (Governorate filter)
 ![alt text](https://github.com/MehdiBC/MV--Architectures-EVAX/blob/main/captures/centre_vacc_gov.png)
 
 <br />
