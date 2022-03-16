@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CentreVaccinationComponent } from './view-model/centre-vaccination/centre-vaccination.component';
 import { PassCovidComponent } from './view-model/pass-covid/pass-covid.component';
-import {FormsModule} from "@angular/forms";
+import { FormsModule } from '@angular/forms';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import {FormsModule} from "@angular/forms";
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [RouterModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

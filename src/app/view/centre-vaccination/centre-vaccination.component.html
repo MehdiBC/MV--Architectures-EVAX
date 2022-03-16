@@ -1,21 +1,31 @@
-<select class="form-select" aria-label="Default select example">
-  <option selected>Open this select menu</option>
-  <option value="Ariana">Ariana</option>
-  <option value="Ben Arous">Ben Arous</option>
-</select>
-<table class="table">
-  <thead>
-  <tr>
-    <th scope="col">Gouvernorat</th>
-    <th scope="col">Centre vaccination</th>
-    <th scope="col">Tel</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let centreVaccination of centreVaccinations">
-    <td>{{centreVaccination.governorate}}</td>
-    <td>{{centreVaccination.name}}</td>
-    <td>{{centreVaccination.phone}}</td>
-  </tr>
-  </tbody>
-</table>
+<div class="container mt-5">
+  <div class="d-flex justify-content-between">
+    <div class="col-5">
+      <select class="form-select mb-4" [(ngModel)]="selectedGovernorat" (change)="changeGovernorat()">
+        <option selected>All</option>
+        <option *ngFor="let governorat of governorats" value={{governorat}}>{{governorat}}</option>
+      </select>
+    </div>
+    <div class="col-5">
+      <input type="text" class="col-6 form-control" [(ngModel)]="insertedName" placeholder="Entrez le nom du centre" (change)="changeGovernorat()">
+    </div>
+  </div>
+  <table class="table">
+    <thead>
+    <tr class="table-headers">
+      <th scope="col">Gouvernorat</th>
+      <th scope="col">Centre de vaccination</th>
+      <th scope="col">Tel</th>
+      <th scope="col">Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let centreVaccination of centreVaccinations">
+      <td>{{centreVaccination.governorate}}</td>
+      <td>{{centreVaccination.name}}</td>
+      <td>{{centreVaccination.phone}}</td>
+      <td>{{centreVaccination.address}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
